@@ -1,0 +1,54 @@
+/* Order Status Container */
+.order-status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 200px;
+    margin: 50px auto;
+    padding-left: 30px; /* Space for the line */
+  }
+  
+  /* The Line */
+  .line {
+    position: absolute;
+    left: 20px; /* Positioning the line to pass through the center of the circles */
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #e0e0e0;
+    z-index: 1;
+  }
+  
+  /* Status Points (Circles) */
+  .status-point {
+    position: relative;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .status-label {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .status-point.completed {
+    background-color: #4caf50; /* Green for completed steps */
+    color: white;
+  }
+  
+  .status-point.completed .status-label {
+    color: #4caf50;
+  }
+  

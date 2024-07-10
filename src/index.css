@@ -1,0 +1,57 @@
+.amount {
+    position: relative;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .amount-input {
+    padding-right: 30px;
+    -webkit-appearance: none; 
+    -moz-appearance: textfield; 
+  }
+
+  .amount-input::-webkit-outer-spin-button,
+  .amount-input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  .icon {
+    position: absolute;
+   
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    background:  linear-gradient(90deg, rgba(72,121,236,1) 0%, rgba(123,166,196,1) 33%, rgba(143,184,180,1) 45%, rgba(179,216,150,1) 64%, rgba(202,237,132,1) 88%);;
+    height: 100%;
+    font-weight: bold;
+    right: 0;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .dropdown-item {
+    padding: 8px 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f0f0;
+  }
+  

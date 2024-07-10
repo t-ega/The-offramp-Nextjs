@@ -1,0 +1,85 @@
+.logo {
+    font-size: 30px;
+    width: 100%;
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    height: 100%;
+    background: -webkit-linear-gradient(360deg,
+            rgba(72, 121, 236, 1) 0%,
+            rgba(123, 166, 196, 1) 33%,
+            rgba(143, 184, 180, 1) 45%,
+            rgba(179, 216, 150, 1) 64%,
+            rgba(202, 237, 132, 1) 88%,
+            rgba(205, 251, 190, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu-icon {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.link-item {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 1.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.nav-bar {
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    margin: 0px 40px;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-bar {
+        display: none;
+        position: absolute;
+        top: 3.7rem;
+        left: 0;
+        width: 100%;
+        background-color: var(--bgcolor);
+        text-align: center;
+    }
+
+    .nav-bar.responsive {
+        display: block;
+    }
+
+    .header {
+        margin: 0px;
+    }
+
+    .nav-bar a {
+        display: block;
+    }
+
+    .menu-icon {
+        display: block;
+        z-index: 1;
+    }
+
+    button {
+        padding: 0.4rem;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+}
